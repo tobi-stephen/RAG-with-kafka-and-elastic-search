@@ -9,7 +9,7 @@ The application has a number of components including
 - Kafka Producer: The Producer app streams data from `conversations.json` to a kafka topic and optionally can be further processed and transformed to another kafka topic (using Flink or Kafka streams).
 - Kafka Consumer: The Consumer app(s) reads from the kafka topic in order to generate embeddings using OpenAI and indexed to an ElasticSearch store
 - LLM module: The module handles embedding generation and completion request using OpenAI
-- Vector Database, LLM, Data Streaming platform: Though I tested this using local setups of ElasticSearch and Apache Kafka clusters - An easier approach will be to use fully managed versions provided by Elastic, Confluent, and OpenAI APIs, thus allowing you to focus on the important business logic.
+- Vector Database, LLM, Data Streaming platform: Though I tested this using local setups of ElasticSearch and Apache Kafka clusters - An easier approach will be to use fully managed versions provided by Elastic(https://www.elastic.co/), Confluent(https://www.confluent.io/), and OpenAI APIs(https://openai.com/api/), thus allowing you to focus on the important business logic.
 
 
 ### Resources
